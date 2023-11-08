@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>My Report peg</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body>
+      <style>
+      *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+      }
+      body{
+       background:linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('/p1.jpg');
+       
+        background-size: 100% 100%;
+      }
+   .text{
+      width: 595px;
+      color: #fff;
+      white-space: nowrap;
+    overflow: hidden;
+    animation: moveLeft 10s linear infinite;
+   font-weight: 700;
+   font-size: 18px;
+    }
+      @keyframes moveLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%); 
+    }
+  }
+  #output{
+    height: 520px;
+    color: #fff;
+    padding: 10px;
+  }
+  .navbar{
+    overflow: hidden;
+  }
+    </style>
+    
+     <nav class="navbar navbar-expand-lg navbar-danger bg-danger">
+    <div class="text">
+  My Report about Dr. Jhon Dewey Study
+    </div>
+    </nav>
+    
+<p id="output"></p>
+<div class="d-flex p-2">
+  <button class="btn btn-primary w-50 bg-primary"id="changeTextButton">Next</button>
+<button class="btn btn-danger w-50 bg-danger ms-2"id="back">Back</button>
+</div>
+
+<script>
+  var p1 = " Dr. John Dewey, who is an advocate of the philosophy of pragmatism, might simply be called experimentalist because he insists that ideas must always be tested by experiment. He believed that no knowledge is ever certain that is not subject to new evidence which might result from experimentation and experience. He applied these basic concepts to nearly every aspect of philosophy and education. His experimental belief which was carried over into his educational philosophy became the basis for what is usually described as progressive education. His influence on public schools has been great in the Philippines "+"<br>"+ "" +"<br>"+""+"<br>"+ "" +"<br>"+""+"<br>"+ ""+"<br>"+ ""+"<br>"+"<label style='margin-left: 140px;'>pages 1</label>";
+  var p2 = "In addition the aims of education under the New Society are based on pragmatic, experimentalism or  approach of Dr. Dewey. The school under the New Society utilizes the following educational concepts of the said philosopher:"+"<br>"+                   "1.) The nature of the child is made the center of educative process. This means that the child’s needs, interests, abilities and purposes must be taken into consideration. The child is viewed as an active element whose purpose is to live and grow."+"<br>"+                 "2.) The theory of self-activity is made the center or basis of learning. The new education stresses learning by doing or experiencing and experimenting. The school is converted into a living and creative influence, producing self-directed reference."+"<br>"+ ""+"<br>"+ ""+""+"<br>"+ "<label style='margin-left: 140px;'>pages 2</label>";
+  var p3 = "3.) The development of personality is made the primary aim of the New Education. The aim of the new education is to produce a well-balanced, well integrated and socially adjusted personality. The cooperation between the teacher and the student are important element in the development of personality."+"<br>"+                   "4.) Activity program is the core of the curriculum. This is based on Dr. John Dewey’s concept that education is life and a social process. Example of school activities are field trip, report, group activity, games, observation, experiments, cultural activities, on–the-job training, programs and project."+"<br>"+"5.) Socialized teaching and learning are utilized. This is patterned from the concept that education is a social process. Teacher and student work together to execute classroom activities."+"<br>"+""+"<br>"+ "<label style='margin-left: 140px;'>pages 3</label>";
+var p4  = "	6.) Individual differences of the pupils are recognized not by sectioning students according to IQ but by adjusting the subject matter to the abilities of the students. This is based on the concept that each individual is unique or individual differences."+"<br>"+ "7.) Thinking and reasoning are emphasized in the educative process. Effective teaching, thought provoking activities and good questioning stimulate thinking and reasoning in which the abilities of a child are maximized."+"<br>"+            "8.) Evaluation with flexible standards is utilized in teaching and learning. This is based on the principle that evaluation completes the learning."+"<br>"+ ""+"<br>"+ ""+"<br>"+ ""+"<br>"+ ""+"<br>"+""+"<br>"+  "<label style='margin-left: 140px;'>pages 4</label>";
+var p5 = ""+"<br>"+"9.) Students are free from emotional tension or fear of the teacher. A law about corporal punishment has already implemented in the Philippine to prevent emotional and devastation of the learners. The Philippine society promotes not blind obedience but intelligent self-discipline."+"<br>"+ "10.) Close relationship between the school and the community. School activities are related to the awareness of community improvement, participation in cultural activities and projects. As Dewey emphasized that Education is a social process."+"<br>"+   "The philosophy of Dr. John Dewey focuses on the practical and useful events of a child. The assertive factors of empiricism or naturalism, experimentalism, instrumentalism and pragmatism had vital influence in the field of education in the Philippines."+"<br>"+ "<label style='margin-left: 140px;'>pages 5</label>";
+var p6  = "  The philosophy of Dr. John Dewey focuses on the practical and useful events of a child. The assertive factors of empiricism or naturalism, experimentalism, instrumentalism and pragmatism had vital influence in the field of education in the Philippines.  Attentionention is placed on the child’s activities and the value of learning by living, that growth is more important in learning and is applicable to the educational system in the Philippines."+"<br>"+"It can be said that the nature of educational philosophy suggests the necessity for all other educational disciplines to follow the goal and direction of philosophy. The bright ideas and reflective thought of the philosopher provided a frame of reference which must operate. Education must deal with the nature of learner, the teaching process, curriculums, duties and responsibilities of teachers and the administration likewise must be considered."+"<br>"+ "<label style='margin-left: 140px;'>pages 6</label>";
+  var currentP = 0; 
+  var paragraphs = [p1, p2, p3, p4, p5, p6];
+var outputElement = document.getElementById('output');
+outputElement.innerHTML = p1;
+  document.getElementById('changeTextButton').addEventListener('click', function () {
+  currentP = (currentP + 1) % paragraphs.length;
+     outputElement.innerHTML = paragraphs[currentP];
+
+  });
+  
+  document.getElementById('back').addEventListener('click', function (){
+    currentP = (currentP - 1 + paragraphs.length) % paragraphs.length;
+            outputElement.innerHTML = paragraphs[currentP];
+        });
+
+</script>
+
+</body>
+</html>
